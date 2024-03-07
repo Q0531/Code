@@ -1,1 +1,5 @@
 #include<stdio.h>
+int main(){
+    printf("一次尝试");
+    return 0;
+}
