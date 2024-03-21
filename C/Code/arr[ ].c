@@ -8,5 +8,5 @@ int main(){
     arr[5] = 0;
     printf("%s\n",arr);
     system("pause");
-    return 0;
+    return 0; 
 }
