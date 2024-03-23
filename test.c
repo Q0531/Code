@@ -5,6 +5,7 @@ int main(){
     printf("123");
     printf("123");
     printf("123");
+    printf("123");
 
     system("pause");
     return 0;
