@@ -108,7 +108,7 @@ void DestroyList(SeqList * L){
 }//线性表的销毁
 
 
-int main(){
-    
-    return 0;
-}
+// int main(){
+
+//     return 0;
+// }

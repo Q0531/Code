@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "Win",
+            "name": "Win64",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
