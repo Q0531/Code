@@ -1,6 +1,8 @@
+//顺序表
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>//包含头文件
+#include <stdbool.h>//头文件
 
 #define InitSize 10
 typedef int ElemType;//一些声明和类型转换
