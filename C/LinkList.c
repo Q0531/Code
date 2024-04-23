@@ -8,5 +8,5 @@ typedef struct LNode{
 }LNode,*LinkList;
 
 void InitLink(LinkList *L){
-    
+    printf("1");
 }
