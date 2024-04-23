@@ -110,7 +110,16 @@ void DestroyList(SeqList * L){
 }//线性表的销毁
 
 
-// int main(){
-
-//     return 0;
-// }
+int main(){
+    SeqList L;
+    InitList(&L);
+    int arr[] = {1,2,3,4,5};
+    for(int n = 0;n<sizeof(arr)/sizeof(arr[0]);n++){
+        L.data[n] = arr[n];
+        L.Length++;
+    }
+    
+    PrintList(L);
+    system("pause");
+    return 0;
+}
