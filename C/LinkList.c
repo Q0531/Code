@@ -6,3 +6,7 @@ typedef struct LNode{
     ElemType data;
     struct LNode *next;
 }LNode,*LinkList;
+
+void InitLink(LinkList *L){
+    
+}
