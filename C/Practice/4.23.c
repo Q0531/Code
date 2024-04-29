@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
-
+#include <time.h>
 // //1.计算n的阶乘
 // int main(){
 //    int n = 0,ret = 1;
@@ -66,23 +66,84 @@
 // }
 
 
-//5.三次输入密码登录
-int main(){
-    char password[12] = {0};
-    int i = 0;
-    for(i = 0;i<3;i++){
-        printf("请输入密码：");
-        scanf("%s",password);
-        if(strcmp(password,"Qyjcomeon") == 0){
-            printf("密码正确，登录成功\n");
-            break;
-        }
-        else
-            printf("密码错误\n");
-    }
-    if(i == 3){
-        printf("密码错误已达三次，强制退出系统\n");
-    }
-    system("pause");
-    return 0;
-}
+// //5.三次输入密码登录
+// int main(){
+//     char password[12] = {0};
+//     int i = 0;
+//     for(i = 0;i<3;i++){
+//         printf("请输入密码：");
+//         scanf("%s",password);
+//         if(strcmp(password,"Qyjcomeon") == 0){
+//             printf("密码正确，登录成功\n");
+//             break;
+//         }
+//         else
+//             printf("密码错误\n");
+//     }
+//     if(i == 3){
+//         printf("密码错误已达三次，强制退出系统\n");
+//     }
+//     system("pause");
+//     return 0;
+// }
+
+
+// //猜数字游戏
+// void menu(){
+//     printf("*******************\n");
+//     printf("******1.play*******\n");
+//     printf("******2.exit*******\n");
+//     printf("*******************\n");
+//     return;
+// }//生成游戏菜单
+// void game(){
+//     int guess = 0;
+//     int ret = rand()%100+1;
+//     while(1){ 
+//         printf("请猜数字-> ");
+//         scanf("%d",&guess);
+//         if(guess == ret){
+//             printf("恭喜你，猜对了！\n");
+//             break;
+//         }
+//         else if(guess > ret){
+//             printf("猜大了，请重新猜数\n");
+//         }
+//         else if(guess < ret){
+//             printf("猜小了，请重新猜数\n");
+//         }
+//         return;
+//     }
+// }//游戏主体
+// int main(){
+//     int input = 0;
+//     do{
+//         srand((unsigned int)time(NULL));
+//         menu();
+//         printf("请选择-> ");
+//         scanf("%d",&input);
+//         switch(input){
+//             case 1:
+//                 {
+//                     game();
+//                     break;
+//                 }
+//             case 0:
+//                 {
+//                     printf("退出游戏\n");
+//                     break;
+//                 }
+//             default:
+//                 {
+//                     printf("选择错误，请重新选择\n");
+//                     break;
+//                 }
+//         }
+//         if(input == 0||input == 1)
+//         break;
+//     }
+//     while(input);
+//     system("pause");
+//     return 0;
+// }
+
