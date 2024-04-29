@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
-#include <time.h>
+#include <time.h>//函数引用
+
 // //1.计算n的阶乘
 // int main(){
 //    int n = 0,ret = 1;
@@ -146,4 +147,5 @@
 //     system("pause");
 //     return 0;
 // }
+
 
