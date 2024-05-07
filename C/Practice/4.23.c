@@ -89,7 +89,7 @@
 // }
 
 
-// //猜数字游戏
+// //6.猜数字游戏
 // void menu(){
 //     printf("*******************\n");
 //     printf("******1.play*******\n");
@@ -142,6 +142,87 @@
 //         }
 //         if(input == 0||input == 1)
 //         break;
+//     }
+//     while(input);
+//     system("pause");
+//     return 0;
+// }
+
+
+// //7.60秒关机
+// int main(){
+//     char input[20] = {0};
+//     system("shutdown -s -t 60");
+// again:
+//     printf("你的电脑60秒内要关机喽,如果输入:我是猪,就饶了你！\n");
+//     scanf("%s",input);
+//     if(strcmp(input,"我是猪") == 0){
+//         system("shutdown -a");
+//         printf("好了，饶你一命\n");
+//     }
+//     else{
+//         printf("怎么个事，不信是吧？\n");
+//         goto again;
+//     }
+//     system("pause");
+//     return 0;
+// }
+
+
+// //6和7结合，猜数字三次不对直接关机。
+// void menu(){
+//     printf("****************\n");
+//     printf("*****1.play*****\n");
+//     printf("*****0.exit*****\n");
+//     printf("****************\n");
+// }//游戏菜单
+// void body(){
+//     int a = 0;
+//     int nub = rand()%100 + 1;
+//     int i = 0;
+//     while(i<3){
+//         printf("请猜数字-> ");
+//         scanf("%d",&a);
+//     if(a >nub){
+//         printf("猜大了，再试%d次\n",2-i);
+//         i++;
+//     }
+//     else if(a < nub){
+//         printf("猜小了，再试%d次\n",2-i);
+//         i++;
+//     }
+//     else{
+//         printf("猜对了，游戏结束\n");
+//         break;
+//         }
+//     }
+//     if(i == 3){
+//         system("shutdown -s -t 1");
+//     }
+// }//游戏主体
+// int main(){
+//     int input = 0;
+//     menu();
+//     do{
+//         srand((unsigned int)time(NULL));
+//         printf("请选择-> ");
+//         scanf("%d",&input);
+//         switch(input){
+//             case 1:{
+//                 body();
+//                 break;
+//             }
+//             case 0:{
+//                 printf("退出游戏\n");
+//                 break;
+//             }
+//             default:{
+//                 printf("选择错误，请重新选择\n");
+//             }
+//         }
+//         if(input == 0||input == 1){
+//             break;
+//         }
 //     }
 //     while(input);
 //     system("pause");
