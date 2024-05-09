@@ -119,7 +119,7 @@
 // int main(){
 //     int input = 0;
 //     do{
-//         srand((unsigned int)time(NULL));
+//         srand((unsigned int)time(NULL));  //srand()-生成随机数的起点，里面需要一个unsign int类型的变量，如果这个参数每次都变，则每次的随机数都不同，time()正好生成时间戳，每时每刻都在变化。
 //         menu();
 //         printf("请选择-> ");
 //         scanf("%d",&input);
