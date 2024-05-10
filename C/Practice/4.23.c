@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
-#include <time.h>//函数引用
+#include <time.h>
+#include <math.h>//函数引用
 
 // //1.计算n的阶乘
 // int main(){
@@ -230,3 +231,23 @@
 // }
 
 
+// //找100-200以内的素数（即质数，只能被1和它本身整除的数）
+// int main(){ 
+//     int count = 0;
+//     for(int i = 101;i <= 200;i+=2){
+//         int flag = 1;
+//         for(int j = 2;j <= sqrt(i);j++){
+//             if(i%j == 0){
+//                 flag = 0;
+//                 break;
+//             }
+//         }
+//         if(flag == 1){
+//             printf("%d ",i);
+//             count++;
+//         }
+//     } 
+//     printf("\n%d\n",count);
+//     system("pause");
+//     return 0;
+// }
