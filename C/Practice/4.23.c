@@ -3,7 +3,8 @@
 #include <string.h>
 #include <windows.h>
 #include <time.h>
-#include <math.h>//函数引用
+#include <math.h>
+#include <stdbool.h>//函数引用
 
 // //1.计算n的阶乘
 // int main(){
@@ -251,5 +252,34 @@
 //     system("pause");
 //     return 0;
 // }
+
+
+// //10.输入一个数判断是否是闰年
+// //首先要懂闰年的判断规则：
+// //1.能被4整除&&不能被100整除
+// //或者
+// //2.能被400整除
+// bool if_leap_year(int x){
+//     if(((x%4 == 0)&&(x%100 != 0))||(x%400 == 0)){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+// int main(){
+//     int year = 0;
+//     scanf("%d",&year);
+//     int output = if_leap_year(year);
+//     if(output){
+//         printf("%d年是闰年\n",year);
+//     }
+//     else{
+//         printf("%d年不是闰年\n",year);
+//     }
+//     system("pause");
+//     return 0;
+// }
+
 
 
