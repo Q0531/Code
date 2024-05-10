@@ -266,7 +266,7 @@
 //     else{
 //         return false;
 //     }
-// }
+// } //只判断，不要把打印写在自定义函数内（高内聚，低耦合）
 // int main(){
 //     int year = 0;
 //     scanf("%d",&year);
