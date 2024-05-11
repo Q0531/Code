@@ -316,17 +316,35 @@
 // }
 
 
-//12.通过函数递归把一个输入的数的每一位分别打印出来（需要学习一下函数栈帧的创建和销毁！！！）
-void print(unsigned int num){
-    if(num > 9){
-        print(num / 10);
-    }
-    printf("%u ",num % 10);
-}
-int main(){
-     unsigned int num = 0;
-    scanf("%u",&num);
-    print(num);
-    system("pause");
-    return 0;
-}
+// //12.通过函数递归把一个输入的数的每一位分别打印出来（需要学习一下函数栈帧的创建和销毁！！！）
+// void print(unsigned int num){
+//     if(num > 9){
+//         print(num / 10);
+//     }
+//     printf("%u ",num % 10);
+// }
+// int main(){
+//      unsigned int num = 0;
+//     scanf("%u",&num);
+//     print(num);
+//     system("pause");
+//     return 0;
+// }
+
+
+// //13.写一个递归函数，在不创建临时变量的情况下计算字符数组长度
+// int my_strlen(char *arr){
+//     if(*arr != '\0'){
+//         return 1 + my_strlen(arr+1);
+//     }
+//     else{
+//         return 0;
+//     }
+// }
+// int main(){
+//     char arr[] = "abcdef";
+//     int length = my_strlen(arr);
+//     printf("%d\n",length);
+//     system("pause");
+//     return 0;
+// }
