@@ -316,3 +316,17 @@
 // }
 
 
+//12.通过函数递归把一个输入的数的每一位分别打印出来（需要学习一下函数栈帧的创建和销毁！！！）
+void print(unsigned int num){
+    if(num > 9){
+        print(num / 10);
+    }
+    printf("%u ",num%10);
+}
+int main(){
+     unsigned int num = 0;
+    scanf("%u",&num);
+    print(num);
+    system("pause");
+    return 0;
+}
