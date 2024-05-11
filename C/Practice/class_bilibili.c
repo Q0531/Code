@@ -321,7 +321,7 @@ void print(unsigned int num){
     if(num > 9){
         print(num / 10);
     }
-    printf("%u ",num%10);
+    printf("%u ",num % 10);
 }
 int main(){
      unsigned int num = 0;
