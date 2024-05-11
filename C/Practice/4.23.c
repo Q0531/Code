@@ -282,4 +282,37 @@
 // }
 
 
+// //11.二分查找法，查找有序整型数组里的特定值
+// int binary_search(int arr[],int k,int siz){
+//     int left = 0;
+//     int right = siz - 1;
+//     while(left <= right){
+//         int mid = left + (right - left) / 2;  //没有使用(left + right) / 2 目的在于防止溢出；
+//         if(arr[mid] < k){
+//             left = mid + 1;
+//         }
+//         else if(arr[mid] > k){
+//             right = mid -1;
+//         }
+//         else{
+//             return mid;
+//         }
+//     }
+//     return -1;
+// }//二分查找法
+// int main(){
+//     int arr[] = {1,2,3,4,5,6,7,8,9};
+//     int k = 6;
+//     int siz = sizeof(arr)/sizeof(arr[0]);
+//     int ret = binary_search(arr,k,siz);
+//     if(ret != -1){
+//         printf("找到了，下标是%d\n",ret);
+//     }
+//     if(ret == -1){
+//         printf("没找到\n");
+//     }
+//     system("pause");
+//     return 0;
+// }
+
 
