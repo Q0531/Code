@@ -49,14 +49,70 @@ void print_link(LinkList L){
     }
 }//链表内容展示
 
-int main(){
-    LinkList L;
-    initlink(&L);
-    headinsert(&L);
-    print_link(L);
-    system("pause");
-    return 0;
-}
+
+bool ListInsert(LinkList *L,int i,elemtype e){
+    if(i<1){
+        return false;
+    }
+        int j = 0;
+        Lnode *s = *L;
+    while(s != NULL && j<i-1){
+            s = s->next;
+            j++;
+        }
+    if(s == NULL){
+        return false;
+    }
+Lnode *p = (Lnode*)malloc(sizeof(Lnode));
+    p->data = e;
+    p->next = s->next;
+    s->next = p;
+    return true;
+}//带头结点的按位插入
+
+
+bool listinsert(LinkList *L,int i,elemtype e){
+    if(i<1)
+        return false;
+    if(i == 1){
+        Lnode *s = (Lnode*)mallic(sizeof(Lnode));
+        s->data = e;
+        s->next = L;
+        L = s;
+        return true;
+        }
+    int j = 0;
+    Lnode *s = L;
+    while(s != NULL && j<i-1){
+        s = s->next;
+        j++;
+    }
+    if(s == NULL)
+        return false;
+    Lnode *p = (Lnode*)malloc(sizeof(Lnode));
+    p->data = e;
+    p->next = s->next;
+    s->next = p;
+    return true;
+    }//不带头结点的按位插入
+
+bool listdelete(LinkList *L,int i,elemtype *e){
+    if(i<1)
+        return false;
+    Lnode *s = (*L);
+    int j = 0;
+    while(s != NULL && j<i-1){
+        s = s->next;
+        j++;
+    }
+    if(s = NULL)
+        return false;
+    Lnode *p = s->next;
+    *e = p->data;
+    s->next = p->next;
+    free(p);
+    return true;
+}//带头结点的按位删除
 
 
 
