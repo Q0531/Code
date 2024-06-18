@@ -350,3 +350,131 @@
 // }
 
 
+// //14.将三个整数值从大到小输出
+// void exchange(int *a,int *b){
+//     int s = *a;
+//     *a = *b;
+//     *b = s;
+// }
+// void swap(int a,int b,int c){
+//     if(a<b)
+//         exchange(&a,&b);
+//     if(a<c)
+//         exchange(&a,&c);
+//     if(b<c)
+//         exchange(&b,&c);
+//     printf("%d %d %d\n",a,b,c);
+// }
+// int main(){
+//     int a=0,b=0,c=0;
+//     scanf("%d %d %d",&a,&b,&c);
+//     swap(a,b,c);
+//     system("pause");
+//     return 0;
+// }
+
+
+// //15.求100内能被3整除的数
+// int main(){
+//     for(int i=3;i<=100;i+=3){
+//         printf("%d ",i);
+//     }
+//     system("pause");
+//     return 0;
+// }
+
+
+// //16.求两个数的最小公倍数
+// int main(){
+//     int a=0,b=0;
+//     scanf("%d %d",&a,&b);
+//     int c = (a<b) ? a : b;
+//     while(1){      
+//         if(a%c == 0 && b%c == 0){
+//             printf("%d",c);
+//             break;
+//         }
+//         else{
+//             c--;
+//         }
+//     }
+//     system("pause");
+//     return 0;
+// }
+
+
+// //17.16的优化（辗转相除法）
+// int main(){
+//     int a=0,b=0;
+//     scanf("%d %d",&a,&b);
+//     while(a%b){
+//         int c = a%b;
+//         a = b;
+//         b = c;
+//     }
+//     printf("%d",b);
+//     system("pause");
+//     return 0;
+// }
+
+
+// //18.判断1-100中出现多少次数字9
+// int main(){
+//     int count = 0;
+//     for(int i = 1;i<=100;i++){
+//         if(i%10 == 9){
+//             count ++;
+//         }
+//         if(i/10 == 9){
+//             count ++;
+//         }
+//     }
+//     printf("count = %d\n",count);
+//     system("pause");
+//     return 0;
+// }
+
+
+// //19.计算1 -1/2 +1/3 -1/4 ..... -1/100的值
+// int main(){
+//     double sum = 0.0;
+//     int flag = 1;
+//     for(int i = 1;i<=100;i++){
+//         sum = sum + flag*(1.0/i);//易错点，要想得到小数，除号两边至少有一个浮点数。
+//         flag *= -1;
+//     }
+//     printf("%lf\n",sum);
+//     system("pause");
+//     return 0;
+// }
+
+
+// //20.找10个整数中的最大值
+// int main(){
+//     int arr[] = {10,5,21,4,7,12,41,75,89,28};
+//     int max = arr[0];
+//     for(int i = 1;i<10;i++){
+//         if(arr[i] > max){
+//             max = arr[i];
+//         }
+//     }
+//     printf("%d\n",max);
+//     system("pause");
+//     return 0;
+// }
+
+
+// //21.打印九九乘法表
+// int main(){
+//     int i=1,j=1;
+//     for(i = 1;i<=9;i++){
+//         for(j = 1;j<=i;j++){
+//             printf("%d*%d=%-2d ",i,j,i*j); //%2d 打印两位（单位数和双位数右对齐），%-2d（单位数和双位数左对齐）,&02d（打印两位数，位数不够用0补）
+//         }
+//         printf("\n");
+//     }
+//     system("pause");
+//     return 0;
+// }
+
+

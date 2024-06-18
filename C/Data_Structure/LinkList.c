@@ -115,6 +115,36 @@ bool listdelete(LinkList *L,int i,elemtype *e){
 }//带头结点的按位删除
 
 
+Lnode* getelem(LinkList L,int i){
+    if(i<1)
+        return NULL;
+    Lnode *p = L->next;
+    int j = 1;
+    while(p != NULL && j != i){
+        p = p->next;
+        j++;
+    }
+    return p;
+}//带头结点，按位查找
+
+
+LinkList List_insert_weibu(LinkList *L){
+    int x = 0;
+    *L = (LinkList)malloc(sizeof(Lnode));
+    Lnode *r = *L, *s = *L;
+    scanf("%d",&x);
+    while(x != 9999){
+        s = (Lnode*)malloc(sizeof(Lnode));
+        s->data = x;
+        r->next = s;
+        r = s;
+        scanf("%d",&x);
+    }
+    r->next = NULL;
+    return *L;
+}//尾插法创建链表
+
+
 
 
 
