@@ -1,7 +1,7 @@
 #include "a.h"
 int main(){
-    int a = adds(1, 2);
-    printf("123and%d",a);
+    
+    printf("123and");
     system("pause");
     return 0;
 }

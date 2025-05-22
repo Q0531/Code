@@ -128,30 +128,6 @@ C_code/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_code.dir\build.make CMakeFiles/C_code.dir/build
 .PHONY : C_code/fast
 
-hanshu.obj: hanshu.c.obj
-.PHONY : hanshu.obj
-
-# target to build an object file
-hanshu.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_code.dir\build.make CMakeFiles/C_code.dir/hanshu.c.obj
-.PHONY : hanshu.c.obj
-
-hanshu.i: hanshu.c.i
-.PHONY : hanshu.i
-
-# target to preprocess a source file
-hanshu.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_code.dir\build.make CMakeFiles/C_code.dir/hanshu.c.i
-.PHONY : hanshu.c.i
-
-hanshu.s: hanshu.c.s
-.PHONY : hanshu.s
-
-# target to generate assembly for a file
-hanshu.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_code.dir\build.make CMakeFiles/C_code.dir/hanshu.c.s
-.PHONY : hanshu.c.s
-
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -185,9 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C_code
-	@echo ... hanshu.obj
-	@echo ... hanshu.i
-	@echo ... hanshu.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/C_code.dir/hanshu.c.obj"
-  "CMakeFiles/C_code.dir/hanshu.c.obj.d"
   "CMakeFiles/C_code.dir/main.c.obj"
   "CMakeFiles/C_code.dir/main.c.obj.d"
   "C_code.exe"
