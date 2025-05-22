@@ -1,3 +1,0 @@
-D:/Code/C_code/build/CMakeFiles/C_code.dir
-D:/Code/C_code/build/CMakeFiles/edit_cache.dir
-D:/Code/C_code/build/CMakeFiles/rebuild_cache.dir
