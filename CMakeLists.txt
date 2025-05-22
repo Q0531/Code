@@ -1,3 +1,3 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.5)
 project(C_code)
-add_executable(C_code main.c a.h hanshu.c)
+add_executable(C_code a.h hanshu.c main.c)

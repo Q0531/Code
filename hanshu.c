@@ -1,3 +1,4 @@
-int add(int a, int b){
+#include "a.h"
+int adds(int a, int b){
     return a + b;
 }
